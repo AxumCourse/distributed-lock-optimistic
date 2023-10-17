@@ -1,0 +1,14 @@
+[package]
+name = "distributed-lock-optimistic"
+version = "0.1.0"
+edition = "2021"
+authors = ["axum.rs <team@axum.rs>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/AxumCourse/distributed-lock-optimistic"
+homepage = "https://axum.rs/subject/mall"
+description = "使用 PostgreSQL 乐观锁实现分布式锁"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+sqlx = { version = "0.7", features = ["runtime-tokio", "postgres"] }
